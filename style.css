@@ -1,0 +1,212 @@
+/* body                    {outline: 1px solid red} */
+/* .page                   {outline: 1px solid red} */
+/*  */
+/* header                  {outline: 1px solid red} */
+    /* .logo               {outline: 1px solid red} */
+    /* .menu               {outline: 1px solid red} */
+    /* .menu-item          {outline: 1px solid red} */
+    /* .menu-link          {outline: 1px solid red} */
+
+/* .content                {outline: 1px solid red} */
+    /* .textBox            {outline: 1px solid red} */
+    /* .textBox-title      {outline: 1px solid red} */
+    /* .textBox-text       {outline: 1px solid red} */
+    /* .textBox-link       {outline: 1px solid red} */
+
+    /* .imgBox             {outline: 1px solid red} */
+    /* .pepsi-product      {outline: 1px solid red} */
+
+    /* .thumb              {outline: 1px solid red} */
+    /* .thumb-item         {outline: 1px solid red} */
+    /* .thumb-image        {outline: 1px solid red} */
+
+    /* .social             {outline: 1px solid red} */
+    /* .social-item        {outline: 1px solid red} */
+    /* .social-link        {outline: 1px solid red} */
+    /* .social-logo        {outline: 1px solid red} */
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0062be;
+
+    transition: 0.5s;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+
+    max-width: 80px;
+}
+
+header .menu {
+    position: relative;
+
+    display: flex;
+    list-style: none;
+}
+
+header .menu-link {
+    display: inline-block;
+    color: #fff;
+    font-weight: 400;
+
+    margin-left: 40px;
+}
+
+
+.content {
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textBox {
+    position: relative;
+
+    max-width: 600px;
+}
+
+.textBox-title {
+    color: #fff;
+    font-size: 4em;
+    font-weight: 900;
+    line-height: 1.5em;
+    text-transform: uppercase;
+}
+
+.textBox-title span {
+    font-size: 2em;
+}
+
+.textBox-text {
+    color: #fff;   
+}
+
+.textBox-link {
+    display: inline-block;
+
+    background-color: #fff;
+    color: #444;
+
+    padding: 8px 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.imgBox {
+    width: 600px;
+    margin-right: 50px;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imgBox img {
+    max-width: 240px;
+}
+
+.thumb {
+    position: absolute;
+
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+
+    display: flex;
+
+    list-style: none;
+
+}
+
+.thumb-item {
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb-item:hover {
+    transform: translateY(-15px);
+}
+
+.thumb-image {
+    max-width: 40px;
+}
+
+.social {
+    list-style: none;
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-item + .social-item {
+    margin-top: 5px;
+}
+
+.social-link {
+    display: inline-block;
+
+    filter: invert(1);
+    transform: scale(0.6);
+}
+
+
